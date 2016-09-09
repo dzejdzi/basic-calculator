@@ -1,0 +1,28 @@
+section {
+  width: 100%;
+  padding: 10px;
+}
+
+.execs div {
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul > li {
+  display: inline-block;
+}
+
+ul li input {
+  max-width: 110px;
+}
+
+ul li ul li {
+  display: block;
+}
+
+section p {
+  font-size: smaller;
+}
