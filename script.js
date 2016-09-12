@@ -86,5 +86,20 @@ function testSum(arg1, arg2, expected) {
     isEqualAssertion("sum", arguments, actual, expected);
 }
 
-executeTests();
+document.getElementById('show-tests').addEventListener('click', function (){
+    document.getElementById('results').innerHTML = '';
+    document.getElementById('show-tests').style.display ='none';
+    document.getElementById('hide-tests').style.display ='block';
+    executeTests();
+});
+document.getElementById('hide-tests').addEventListener('click', function (){
+    document.getElementById('results').innerHTML = '';
+    document.getElementById('show-tests').style.display = 'block';
+    document.getElementById('hide-tests').style.display ='none';
+});
+
+
+function helloWorld() {
+    return "Hello world!";
+}
 

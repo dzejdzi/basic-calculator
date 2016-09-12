@@ -56,11 +56,22 @@
     </form>
 </section>
 <section>
+    <button type="button" id="show-tests">Show native JS unit tests</button>
+    <button type="button" id="hide-tests" style="display: none;">Hide native JS unit tests</button>
     <div id="results">
-        Unit tests results.<br/>
+
     </div>
 </section>
+
+<link rel="shortcut icon" type="image/png" href="jasmine/images/jasmine_favicon.png">
+<link rel="stylesheet" type="text/css" href="jasmine/lib/jasmine-core/jasmine.css">
+
+<script type="text/javascript" src="jasmine/lib/jasmine-core/jasmine.js"></script>
+<script type="text/javascript" src="jasmine/lib/jasmine-core/jasmine-html.js"></script>
+<script type="text/javascript" src="jasmine/lib/jasmine-core/boot.js"></script>
+
 <script src="script.js" type="text/javascript"></script>
+<script src="calcSpec.js" type="text/javascript"></script>
 
 </body>
 </html>
