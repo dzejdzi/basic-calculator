@@ -1,69 +1,66 @@
 <!doctype html>
-
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <title>Calc</title>
-  <meta name="description" content="kind of calc, https://jsfiddle.net/dk30j0r4/2/">
-  <meta name="author" content="jbgc">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style type="text/css" ></style>
-
+    <meta charset="utf-8">
+    <title>Basic Calculator</title>
+    <meta name="description" content="kind of calc, https://jsfiddle.net/dk30j0r4/21/">
+    <meta name="author" content="dzejdzi">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css"></style>
 </head>
 
 <body>
-	<section>
-  <h5>
-  'Kinda' calculator with some unit tests
-  </h5>
+<section>
+    <h5>
+        'Kinda' calculator with some unit tests
+    </h5>
 </section>
 <section>
-  <form id="calc-form">
-    <ul>
-      <li>
-        <label for="arg1"></label>
-        <input id="arg1" type="text" pattern="[+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*)(?:[eE][+-]?\d+)?" />
-      </li>
-      <li>
+    <form id="calc-form">
         <ul>
-          <li>
-            <label for="sum1">+</label>
-            <input type="radio" name="operation" checked value="sum" >
-          </li>
-          <li>
-            <label for="sub1">-</label>
-            <input type="radio" name="operation" value="subtract">
-          </li>
-          <li>
-            <label for="mult1">*</label>
-            <input type="radio" name="operation" value="multiple">
-          </li>
-          <li>
-            <label for="div1">/</label>
-            <input type="radio" name="operation" value="division">
-          </li>
+            <li>
+                <label for="arg1"></label>
+                <input id="arg1" type="text" pattern="[+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*)(?:[eE][+-]?\d+)?"/>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <label for="sum1">+</label>
+                        <input id="sum1" type="radio" name="operation" checked value="sum">
+                    </li>
+                    <li>
+                        <label for="sub1">-</label>
+                        <input  id="sub1" type="radio" name="operation" value="subtract">
+                    </li>
+                    <li>
+                        <label for="mult1">*</label>
+                        <input id="mult1" type="radio" name="operation" value="multiple">
+                    </li>
+                    <li>
+                        <label for="div1">/</label>
+                        <input id="div1" type="radio" name="operation" value="division">
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <label for="arg2"></label>
+                <input type="text" id="arg2" pattern="[+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*)(?:[eE][+-]?\d+)?"/>
+            </li>
+            <li>
+                <button id="submit">=</button>
+            </li>
+            <li>
+                <input id="r_result"/>
+            </li>
         </ul>
-      </li>
-      <li>
-        <label for="arg2"></label>
-        <input type="text" id="arg2" pattern="[+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*)(?:[eE][+-]?\d+)?" />
-      </li>
-      <li>
-        <button id="submit">=</button>
-      </li>
-      <li>
-        <input id="r_result" />
-      </li>
-    </ul>
-  </form>
+    </form>
 </section>
 <section>
-  <p>
-    Turn on web develeoper tool and console to see some execution of unit tests.
-  </p>
+    <div id="results">
+        Unit tests results.<br/>
+    </div>
 </section>
-<script src="script.js" type="text/javascript" ></script>
-	
+<script src="script.js" type="text/javascript"></script>
+
 </body>
 </html>
