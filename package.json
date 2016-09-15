@@ -18,6 +18,7 @@
   "homepage": "https://github.com/dzejdzi/basic-calculator#readme",
   "dependencies": {},
   "devDependencies": {
-    "jasmine": "^2.5.1"
+    "jasmine": "^2.5.1",
+    "jasmine-terminal-reporter": "^1.0.2"
   }
 }
