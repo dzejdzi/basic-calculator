@@ -1,0 +1,23 @@
+{
+  "name": "basic-calculator",
+  "version": "1.0.0",
+  "description": "It is very basic calculator with some unit test (Jasmine)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzejdzi/basic-calculator.git"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "Jakub Garbiec <jakub.garbiec@gft.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/dzejdzi/basic-calculator#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.5.1"
+  }
+}
